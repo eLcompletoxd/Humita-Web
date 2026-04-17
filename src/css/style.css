@@ -10,6 +10,7 @@
     --text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
     --inter-font: 'Inter', sans-serif;
     --brand-red: #D2595A;
+    --brand-green: #27ae60;
     --blue: #2980b9;
 }
 
@@ -66,7 +67,9 @@ h1, span, a {
     letter-spacing: 0.5px;
 }
 
-/* --- BOTÓN SUPERIOR CON ANIMACIÓN --- */
+/* ========================= */
+/* --- BOTÓN DOWNLOAD (FIX FINAL) --- */
+/* ========================= */
 .main-dl-btn {
     background-color: var(--brand-red);
     height: 100%;
@@ -76,35 +79,39 @@ h1, span, a {
     font-size: 14px;
     position: relative;
     overflow: hidden;
-    transition: background 0.2s;
+    transition: background 0.3s ease;
 }
 
-.main-dl-btn:hover {
-    background-color: #b84748;
-}
-
-/* Efecto brillo */
+/* Brillo base (oculto) */
 .main-dl-btn::after {
     content: "";
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 50%;
+    left: -150%;
+    width: 60%;
     height: 100%;
     background: linear-gradient(
         to right,
         transparent,
-        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.6),
         transparent
     );
-    transform: skewX(-25deg);
-    animation: sweep 3s infinite;
+    transform: skewX(25deg);
 }
 
+/* Animación SOLO en hover */
+.main-dl-btn:hover::after {
+    animation: sweep 1s forwards;
+}
+
+/* Movimiento */
 @keyframes sweep {
-    0% { left: -100%; }
-    30% { left: 150%; }
+    0% { left: -150%; }
     100% { left: 150%; }
+}
+
+.main-dl-btn:hover {
+    background-color: #e06667;
 }
 
 /* ========================= */
@@ -152,8 +159,8 @@ h1, span, a {
 }
 
 .hero-logo {
-    width: 150px;
-    margin-bottom: 20px;
+    width: 270px;
+    margin-bottom: 10px;
     filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.3));
 }
 
@@ -171,7 +178,6 @@ h1, span, a {
     gap: 20px;
 }
 
-/* Botones base */
 .btn {
     width: 200px;
     height: 55px;
@@ -183,11 +189,12 @@ h1, span, a {
     gap: 12px;
     border: none;
     cursor: pointer;
-    transition: transform 0.1s;
+    transition: all 0.2s ease;
 }
 
 .btn:hover {
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .btn:active {
@@ -196,7 +203,7 @@ h1, span, a {
 
 /* Colores */
 .btn-red {
-    background-color: var(--brand-red);
+    background-color: var(--brand-green);
 }
 
 .btn-blue {
