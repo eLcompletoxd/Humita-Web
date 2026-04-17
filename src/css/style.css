@@ -1,0 +1,162 @@
+/* Importar Inter Extra Bold */
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+:root {
+    /* Sombra de texto exacta según tu especificación */
+    --text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+    --inter-font: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--inter-font);
+    font-weight: 800;
+    color: white;
+    background-color: #000;
+}
+
+/* Aplicación global de la sombra de texto */
+h1, span, a {
+    text-shadow: var(--text-shadow);
+    text-decoration: none;
+    color: white;
+}
+
+/* --- TOP NAV (NEGRO) --- */
+.top-nav {
+    background-color: #000;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.brand-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 25px;
+}
+
+.nav-icon {
+    height: 35px;
+}
+
+.brand-name {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.main-dl-btn {
+    background-color: #2ecc71;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.main-dl-btn:hover {
+    background-color: #27ae60;
+}
+
+/* --- SUB NAV (AZUL TRANSPARENTE) --- */
+.sub-nav {
+    background-color: rgba(41, 128, 185, 0.7);
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 65px;
+    width: 100%;
+    z-index: 999;
+    backdrop-filter: blur(2px); /* Un toque extra de calidad */
+}
+
+.nav-links {
+    display: flex;
+    gap: 45px;
+}
+
+.nav-links a {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-logo {
+    width: 150px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.3));
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 20px;
+}
+
+
+.lucide {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2.5px; /* Para que el icono se vea grueso como la fuente Inter Extra Bold */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn {
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espacio entre icono y texto */
+    transition: transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+.btn-red { background-color: #e67e22; } /* Un naranja/rojo vibrante */
+.btn-blue { background-color: #2980b9; }
+
+.btn .icon {
+    font-size: 1.2rem;
+}
