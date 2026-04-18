@@ -15,34 +15,342 @@
             <img src="src/assets/img/icon.png" alt="Humita Logo" class="nav-icon">
             <span class="brand-name">HUMITA CLIENT</span>
         </div>
-        <a href="#download" class="main-dl-btn">DOWNLOAD</a>
+        <a href="#" class="main-dl-btn" data-view="download">DOWNLOAD</a>
     </header>
 
     <nav class="sub-nav">
         <div class="nav-links">
-            <a href="#">STORE</a>
-            <a href="#">NEWS</a>
-            <a href="#">STAFF</a>
-            <a href="#">SUPPORT</a>
-            <a href="#">SOCIALS</a>
+            <a href="#store" data-view="store">STORE</a>
+            <a href="#news" data-view="news">NEWS</a>
+            <a href="#staff" data-view="staff">STAFF</a>
+            <a href="#support" data-view="support">SUPPORT</a>
+            <a href="#socials" data-view="socials">SOCIALS</a>
         </div>
     </nav>
 
-    <main class="hero">
-        <div class="hero-container">
-            <img src="src/assets/img/icon.png" alt="Humita Icon" class="hero-logo">
-            <h1 class="hero-title">HUMITA CLIENT</h1>
-        <div class="hero-actions"> 
-            <a href="#" class="btn btn-red">
-                <i data-lucide="download"></i> DOWNLOAD
-            </a>
-            <a href="#" class="btn btn-blue">
-                <i data-lucide="shopping-cart"></i> STORE
-            </a>
+    <!-- ========================= -->
+    <!-- VIEW: HOME (HERO)         -->
+    <!-- ========================= -->
+    <div id="view-home" class="view active">
+        <main class="hero">
+            <div class="hero-container">
+                <img src="src/assets/img/icon.png" alt="Humita Icon" class="hero-logo">
+                <h1 class="hero-title">HUMITA CLIENT</h1>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-red" data-view="download">
+                        <i data-lucide="download"></i> DOWNLOAD
+                    </a>
+                    <a href="#" class="btn btn-blue" data-view="store">
+                        <i data-lucide="shopping-cart"></i> STORE
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ========================= -->
+    <!-- VIEW: STORE               -->
+    <!-- ========================= -->
+    <div id="view-store" class="view">
+        <div class="section-header store-header">
+            <h2 class="section-title">STORE</h2>
+            <p class="section-subtitle">Get exclusive cosmetics and perks</p>
         </div>
+        <div class="store-container">
+            <div class="store-filter-bar">
+                <button class="filter-btn active">ALL</button>
+                <button class="filter-btn">COSMETICS</button>
+                <button class="filter-btn">RANKS</button>
+                <button class="filter-btn">BUNDLES</button>
+            </div>
+            <div class="store-grid">
+                <div class="store-card">
+                    <div class="store-card-img placeholder-img"></div>
+                    <div class="store-card-info">
+                        <span class="store-card-name">Item Name</span>
+                        <span class="store-card-price">$X.XX</span>
+                    </div>
+                    <button class="store-buy-btn">BUY NOW</button>
+                </div>
+                <div class="store-card">
+                    <div class="store-card-img placeholder-img"></div>
+                    <div class="store-card-info">
+                        <span class="store-card-name">Item Name</span>
+                        <span class="store-card-price">$X.XX</span>
+                    </div>
+                    <button class="store-buy-btn">BUY NOW</button>
+                </div>
+                <div class="store-card">
+                    <div class="store-card-img placeholder-img"></div>
+                    <div class="store-card-info">
+                        <span class="store-card-name">Item Name</span>
+                        <span class="store-card-price">$X.XX</span>
+                    </div>
+                    <button class="store-buy-btn">BUY NOW</button>
+                </div>
+                <div class="store-card featured">
+                    <div class="store-card-badge">FEATURED</div>
+                    <div class="store-card-img placeholder-img"></div>
+                    <div class="store-card-info">
+                        <span class="store-card-name">Featured Bundle</span>
+                        <span class="store-card-price">$X.XX</span>
+                    </div>
+                    <button class="store-buy-btn">BUY NOW</button>
+                </div>
+                <div class="store-card">
+                    <div class="store-card-img placeholder-img"></div>
+                    <div class="store-card-info">
+                        <span class="store-card-name">Item Name</span>
+                        <span class="store-card-price">$X.XX</span>
+                    </div>
+                    <button class="store-buy-btn">BUY NOW</button>
+                </div>
+                <div class="store-card">
+                    <div class="store-card-img placeholder-img"></div>
+                    <div class="store-card-info">
+                        <span class="store-card-name">Item Name</span>
+                        <span class="store-card-price">$X.XX</span>
+                    </div>
+                    <button class="store-buy-btn">BUY NOW</button>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
+
+    <!-- ========================= -->
+    <!-- VIEW: NEWS                -->
+    <!-- ========================= -->
+    <div id="view-news" class="view">
+        <div class="news-header section-header">
+            <h2 class="section-title">NEWS</h2>
+            <p class="section-subtitle">Stay up to date with the latest updates</p>
+        </div>
+        <div class="news-main-container">
+            <div class="news-filter-bar">
+                <button class="filter-btn active">ALL</button>
+                <button class="filter-btn">UPDATES</button>
+                <button class="filter-btn">EVENTS</button>
+                <button class="filter-btn">ANNOUNCEMENTS</button>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-card-img placeholder-img"></div>
+                    <div class="news-card-body">
+                        <span class="news-tag">UPDATE</span>
+                        <h3 class="news-card-title">Update Title Here</h3>
+                        <p class="news-card-date">April 17, 2025</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-card-img placeholder-img"></div>
+                    <div class="news-card-body">
+                        <span class="news-tag">EVENT</span>
+                        <h3 class="news-card-title">Event Title Here</h3>
+                        <p class="news-card-date">April 10, 2025</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-card-img placeholder-img"></div>
+                    <div class="news-card-body">
+                        <span class="news-tag">ANNOUNCEMENT</span>
+                        <h3 class="news-card-title">Announcement Title Here</h3>
+                        <p class="news-card-date">April 5, 2025</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-card-img placeholder-img"></div>
+                    <div class="news-card-body">
+                        <span class="news-tag">UPDATE</span>
+                        <h3 class="news-card-title">Update Title Here</h3>
+                        <p class="news-card-date">March 28, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= -->
+    <!-- VIEW: STAFF               -->
+    <!-- ========================= -->
+    <div id="view-staff" class="view">
+        <div class="section-header staff-header">
+            <h2 class="section-title">STAFF</h2>
+            <p class="section-subtitle">Meet the team behind Humita Client</p>
+        </div>
+        <div class="staff-container">
+            <div class="staff-group">
+                <h3 class="staff-group-title">OWNERS</h3>
+                <div class="staff-row">
+                    <div class="staff-card">
+                        <div class="staff-avatar placeholder-img"></div>
+                        <div class="staff-info">
+                            <span class="staff-name">Username</span>
+                            <span class="staff-role owner">Owner</span>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-avatar placeholder-img"></div>
+                        <div class="staff-info">
+                            <span class="staff-name">Username</span>
+                            <span class="staff-role owner">Owner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-group">
+                <h3 class="staff-group-title">DEVELOPERS</h3>
+                <div class="staff-row">
+                    <div class="staff-card">
+                        <div class="staff-avatar placeholder-img"></div>
+                        <div class="staff-info">
+                            <span class="staff-name">Username</span>
+                            <span class="staff-role dev">Developer</span>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-avatar placeholder-img"></div>
+                        <div class="staff-info">
+                            <span class="staff-name">Username</span>
+                            <span class="staff-role dev">Developer</span>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-avatar placeholder-img"></div>
+                        <div class="staff-info">
+                            <span class="staff-name">Username</span>
+                            <span class="staff-role dev">Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-group">
+                <h3 class="staff-group-title">MODERATORS</h3>
+                <div class="staff-row">
+                    <div class="staff-card">
+                        <div class="staff-avatar placeholder-img"></div>
+                        <div class="staff-info">
+                            <span class="staff-name">Username</span>
+                            <span class="staff-role mod">Moderator</span>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-avatar placeholder-img"></div>
+                        <div class="staff-info">
+                            <span class="staff-name">Username</span>
+                            <span class="staff-role mod">Moderator</span>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-avatar placeholder-img"></div>
+                        <div class="staff-info">
+                            <span class="staff-name">Username</span>
+                            <span class="staff-role mod">Moderator</span>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-avatar placeholder-img"></div>
+                        <div class="staff-info">
+                            <span class="staff-name">Username</span>
+                            <span class="staff-role mod">Moderator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= -->
+    <!-- VIEW: SUPPORT             -->
+    <!-- ========================= -->
+    <div id="view-support" class="view">
+        <div class="section-header support-header">
+            <h2 class="section-title">SUPPORT</h2>
+            <p class="section-subtitle">Need help? We've got you covered</p>
+        </div>
+        <div class="support-container">
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I download Humita Client?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Placeholder answer. Describe the download process here. You can include links or steps as needed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is Humita Client safe to use?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Placeholder answer. Explain safety and trust information here.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I report a bug or issue?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Placeholder answer. Explain how to contact support or submit a report.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I redeem a purchase from the store?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Placeholder answer. Explain the redemption or activation process here.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>My client isn't launching. What do I do?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Placeholder answer. Provide troubleshooting steps or a link to a guide.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="support-contact">
+                <p>Still need help?</p>
+                <a href="#" class="btn btn-blue support-discord-btn">
+                    <i data-lucide="message-circle"></i> OPEN A TICKET
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= -->
+    <!-- VIEW: SOCIALS             -->
+    <!-- ========================= -->
+    <div id="view-socials" class="view">
+        <div class="section-header socials-header">
+            <h2 class="section-title">SOCIALS</h2>
+            <p class="section-subtitle">Follow us and join the community</p>
+        </div>
+        <div class="socials-container">
+            <a href="https://discord.gg/z9aGA4N4ZM" class="social-card discord">
+                <i data-lucide="message-circle" class="social-icon"></i>
+                <div class="social-info">
+                    <span class="social-platform">DISCORD</span>
+                    <span class="social-handle"></span>
+                </div>
+                <i data-lucide="arrow-right" class="social-arrow"></i>
+            </a>
+            <a href="#" class="social-card twitter">
+                <i data-lucide="twitter" class="social-icon"></i>
+                <div class="social-info">
+                    <span class="social-platform">TWITTER</span>
+                    <span class="social-handle"></span>
+                </div>
+                <i data-lucide="arrow-right" class="social-arrow"></i>
+            </a>
+        </div>
+    </div>
 
     <script src="src/js/main.js"></script>
 </body>
