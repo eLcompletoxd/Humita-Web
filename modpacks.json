@@ -5,40 +5,55 @@
       "name": "Survival SMP",
       "description": "Servidor survival con mods de calidad de vida",
       "version": "1.21.4",
-      "serverIp": "tu.servidor.ip",
+      "loader": {
+        "type": "fabric",
+        "version": "0.16.10"
+      },
+      "serverIp": "tu.servidor.ip:25565",
       "logo": "",
       "color": "#27ae60",
       "background": "",
       "mods": [
         {
-          "name": "sodium",
-          "url": "https://cdn.modrinth.com/data/AANobbMI/versions/c3YkZvne/sodium-fabric-0.6.13%2Bmc1.21.4.jar",
+          "name": "fabric-api",
+          "url": "https://link-directo.com/fabric-api-1.21.4.jar",
           "sha1": ""
         },
         {
-          "name": "lithium",
-          "url": "https://link-directo-de-descarga.com/lithium-1.21.4.jar",
+          "name": "sodium",
+          "url": "https://link-directo.com/sodium-1.21.4.jar",
           "sha1": ""
         }
       ]
     },
     {
-      "id": "skyblock",
-      "name": "SkyBlock Plus",
-      "description": "SkyBlock con mecánicas personalizadas",
+      "id": "modded-forge",
+      "name": "Modded Forge",
+      "description": "Modpack con Forge y mods de aventura",
       "version": "1.20.1",
-      "serverIp": "tu.servidor.ip",
+      "loader": {
+        "type": "forge",
+        "version": "47.3.0"
+      },
+      "serverIp": "tu.servidor.ip:25565",
       "logo": "",
-      "color": "#3498db",
+      "color": "#e67e22",
       "background": "",
-      "mods": []
+      "mods": [
+        {
+          "name": "jei",
+          "url": "https://link-directo.com/jei-1.20.1.jar",
+          "sha1": ""
+        }
+      ]
     },
     {
       "id": "vanilla",
       "name": "Vanilla",
-      "description": "Minecraft sin mods, solo la IP del servidor",
+      "description": "Minecraft sin mods",
       "version": "1.21.4",
-      "serverIp": "tu.servidor.ip",
+      "loader": null,
+      "serverIp": "tu.servidor.ip:25565",
       "logo": "",
       "color": "#8e44ad",
       "background": "",
