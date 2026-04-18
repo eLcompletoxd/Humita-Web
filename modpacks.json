@@ -9,7 +9,7 @@
         "type": "fabric",
         "version": "0.16.10"
       },
-      "serverIp": "tu.servidor.ip:25565",
+      "serverIp": "hypixel.net:25565",
       "logo": "",
       "color": "#27ae60",
       "background": "",
