@@ -3,61 +3,52 @@
     {
       "id": "survival",
       "name": "Survival SMP",
-      "description": "Servidor survival con mods de calidad de vida",
-      "version": "1.21.4",
+      "description": "Servidor survival con Fabric, Sodium y más",
+      "version": "1.21.9",
       "loader": {
         "type": "fabric",
         "version": "0.16.10"
       },
-      "serverIp": "hypixel.net:25565",
+      "serverIp": "tu.servidor.ip:25565",
       "logo": "",
       "color": "#27ae60",
       "background": "",
       "mods": [
         {
           "name": "fabric-api",
-          "url": "https://link-directo.com/fabric-api-1.21.4.jar",
+          "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/vczmWJBj/fabric-api-0.134.1%2B1.21.9.jar",
           "sha1": ""
         },
         {
           "name": "sodium",
-          "url": "https://link-directo.com/sodium-1.21.4.jar",
+          "url": "https://cdn.modrinth.com/data/AANobbMI/versions/AQpu5aS1/sodium-fabric-0.7.0%2Bmc1.21.9.jar",
           "sha1": ""
-        }
-      ]
-    },
-    {
-      "id": "modded-forge",
-      "name": "Modded Forge",
-      "description": "Modpack con Forge y mods de aventura",
-      "version": "1.20.1",
-      "loader": {
-        "type": "forge",
-        "version": "47.3.0"
-      },
-      "serverIp": "tu.servidor.ip:25565",
-      "logo": "",
-      "color": "#e67e22",
-      "background": "",
-      "mods": [
+        },
         {
-          "name": "jei",
-          "url": "https://link-directo.com/jei-1.20.1.jar",
+		  "name": "Text Placeholder API",
+          "url": "https://cdn.modrinth.com/data/eXts2L7r/versions/T5pDJV1K/placeholder-api-2.8.1%2B1.21.10.jar",
+          "sha1": ""
+		},
+          "name": "modmenu",
+          "url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/QuU0ciaR/modmenu-16.0.0.jar",
+          "sha1": ""
+        },
+        {
+          "name": "fabric-language-kotlin",
+          "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/LcgnDDmT/fabric-language-kotlin-1.13.7%2Bkotlin.2.2.21.jar",
+          "sha1": ""
+        },
+        {
+          "name": "yacl",
+          "url": "https://cdn.modrinth.com/data/1eAoo2KR/versions/UZmV6xf4/yet_another_config_lib_v3-3.8.0%2B1.21.9-fabric.jar",
+          "sha1": ""
+        },
+        {
+          "name": "zoomify",
+          "url": "https://cdn.modrinth.com/data/w7ThoJFB/versions/Vdx09fu6/zoomify-2.15.2%2B1.21.9.jar",
           "sha1": ""
         }
       ]
-    },
-    {
-      "id": "vanilla",
-      "name": "Vanilla",
-      "description": "Minecraft sin mods",
-      "version": "1.21.4",
-      "loader": null,
-      "serverIp": "tu.servidor.ip:25565",
-      "logo": "",
-      "color": "#8e44ad",
-      "background": "",
-      "mods": []
     }
   ]
 }
