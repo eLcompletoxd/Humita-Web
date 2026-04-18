@@ -25,10 +25,11 @@
           "sha1": ""
         },
         {
-		  "name": "Text Placeholder API",
+		      "name": "Text Placeholder API",
           "url": "https://cdn.modrinth.com/data/eXts2L7r/versions/T5pDJV1K/placeholder-api-2.8.1%2B1.21.10.jar",
           "sha1": ""
-		},
+		    },
+        {
           "name": "modmenu",
           "url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/QuU0ciaR/modmenu-16.0.0.jar",
           "sha1": ""
