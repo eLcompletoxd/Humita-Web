@@ -1,0 +1,48 @@
+{
+  "modpacks": [
+    {
+      "id": "survival",
+      "name": "Survival SMP",
+      "description": "Servidor survival con mods de calidad de vida",
+      "version": "1.21.4",
+      "serverIp": "tu.servidor.ip",
+      "logo": "",
+      "color": "#27ae60",
+      "background": "",
+      "mods": [
+        {
+          "name": "sodium",
+          "url": "https://cdn.modrinth.com/data/AANobbMI/versions/c3YkZvne/sodium-fabric-0.6.13%2Bmc1.21.4.jar",
+          "sha1": ""
+        },
+        {
+          "name": "lithium",
+          "url": "https://link-directo-de-descarga.com/lithium-1.21.4.jar",
+          "sha1": ""
+        }
+      ]
+    },
+    {
+      "id": "skyblock",
+      "name": "SkyBlock Plus",
+      "description": "SkyBlock con mecánicas personalizadas",
+      "version": "1.20.1",
+      "serverIp": "tu.servidor.ip",
+      "logo": "",
+      "color": "#3498db",
+      "background": "",
+      "mods": []
+    },
+    {
+      "id": "vanilla",
+      "name": "Vanilla",
+      "description": "Minecraft sin mods, solo la IP del servidor",
+      "version": "1.21.4",
+      "serverIp": "tu.servidor.ip",
+      "logo": "",
+      "color": "#8e44ad",
+      "background": "",
+      "mods": []
+    }
+  ]
+}
