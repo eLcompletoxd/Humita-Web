@@ -10,7 +10,7 @@
         "version": "0.18.0"
       },
       "serverIp": "tu.servidor.ip:25565",
-      "logo": "",
+      "logo": "",v
       "color": "#27ae60",
       "background": "",
       "mods": [
@@ -36,7 +36,7 @@
         },
         {
           "name": "fabric-language-kotlin",
-          "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/LcgnDDmT/fabric-language-kotlin-1.13.7%2Bkotlin.2.2.21.jar",
+          "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/N6D3uiZF/fabric-language-kotlin-1.13.8%2Bkotlin.2.3.0.jar",
           "sha1": ""
         },
         {
