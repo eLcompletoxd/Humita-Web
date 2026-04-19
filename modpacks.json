@@ -25,10 +25,10 @@
           "sha1": ""
         },
         {
-		      "name": "Text Placeholder API",
+          "name": "Text-Placeholder-API",
           "url": "https://cdn.modrinth.com/data/eXts2L7r/versions/T5pDJV1K/placeholder-api-2.8.1%2B1.21.10.jar",
           "sha1": ""
-		    },
+        },
         {
           "name": "modmenu",
           "url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/QuU0ciaR/modmenu-16.0.0.jar",
@@ -47,6 +47,87 @@
         {
           "name": "zoomify",
           "url": "https://cdn.modrinth.com/data/w7ThoJFB/versions/Vdx09fu6/zoomify-2.15.2%2B1.21.9.jar",
+          "sha1": ""
+        }
+      ]
+    },
+    {
+      "id": "modded",
+      "name": "Modded SMP",
+      "description": "Servidor modificado con Forge, OptiFine y más",
+      "version": "1.21.1",
+      "loader": {
+        "type": "fabric",
+        "version": "0.18.0"
+      },
+      "serverIp": "hypixel.net:25565",
+      "logo": "D:\\Humita-web\\src\\assets\\img\\background-4.jpg",
+      "color": "#2980b9",
+      "background": "D:\\Humita-web\\src\\assets\\img\\background-4.jpg",
+      "mods": [
+        {
+          "name": "Enhanced-Block-Entities",
+          "url": "https://cdn.modrinth.com/data/OVuFYfre/versions/HBZAPs3u/enhancedblockentities-0.10.2%2B1.21.jar",
+          "sha1": ""
+        },
+        {
+          "name": "Scalable-Lux",
+          "url": "https://cdn.modrinth.com/data/Ps1zyz6x/versions/Yx1tgJMI/ScalableLux-0.1.0.1%2Bfabric.d0d58ab-all.jar",
+          "sha1": ""
+        },
+        {
+          "name": "Vanillin",
+          "url": "https://cdn.modrinth.com/data/6qTrsXCy/versions/JvVNmEal/vanillin-fabric-1.21.1-1.1.3.jar",
+          "sha1": ""
+        },
+        {
+          "name": "Noxesium",
+          "url": "https://cdn.modrinth.com/data/Kw7Sm3Xf/versions/Lawzyi4R/noxesium-2.2.0.jar",
+          "sha1": ""
+        },
+        {
+          "name": "CMESuckMyDuck",
+          "url": "https://cdn.modrinth.com/data/ubAFBxFs/versions/f1s2w0yp/CMESuckMyDuck-1.1.1.jar",
+          "sha1": ""
+        },
+        {
+          "name": "RenderScale",
+          "url": "https://cdn.modrinth.com/data/Va8PJBFX/versions/yU2mpYMp/renderscale-fabric-1.21.1-1.2.jar",
+          "sha1": ""
+        },
+        {
+          "name": "Clumps",
+          "url": "https://cdn.modrinth.com/data/Wnxd13zP/versions/3ene3W1l/Clumps-fabric-1.21.1-19.0.0.1.jar",
+          "sha1": ""
+        },
+        {
+          "name": "Staaaaaaaaaaaack",
+          "url": "https://cdn.modrinth.com/data/myL7fuqp/versions/4KFdri7y/staaaaaaaaaaaack-fabric-1.21-1.5-75.jar",
+          "sha1": ""
+        },
+        {
+          "name": "C2ME",
+          "url": "https://cdn.modrinth.com/data/VSNURh3q/versions/DSqOVCaF/c2me-fabric-mc1.21.1-0.3.0%2Balpha.0.362.jar",
+          "sha1": ""
+        },
+        {
+          "name": "modmenu",
+          "url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/YIfqIJ8q/modmenu-11.0.3.jar",
+          "sha1": ""
+        },
+        {
+          "name": "fabric-api",
+          "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/m6zu1K31/fabric-api-0.116.7%2B1.21.1.jar",
+          "sha1": ""
+        },
+        {
+          "name": "Text-Placeholder-API",
+          "url": "https://cdn.modrinth.com/data/eXts2L7r/versions/U5bhVym2/placeholder-api-2.4.2%2B1.21.jar",
+          "sha1": ""
+        },
+        {
+          "name": "zoomify",
+          "url": "https://cdn.modrinth.com/data/w7ThoJFB/versions/4IZeSKNU/Zoomify-2.14.6%2B1.21.1.jar",
           "sha1": ""
         }
       ]
