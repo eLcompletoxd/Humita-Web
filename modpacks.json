@@ -129,6 +129,16 @@
           "name": "zoomify",
           "url": "https://cdn.modrinth.com/data/w7ThoJFB/versions/4IZeSKNU/Zoomify-2.14.6%2B1.21.1.jar",
           "sha1": ""
+        },
+        {
+          "name": "fabric-language-kotlin",
+          "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/LcgnDDmT/fabric-language-kotlin-1.13.7%2Bkotlin.2.2.21.jar",
+          "sha1": ""
+        },
+        {
+          "name": "cloth-config",
+          "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/HpMb5wGb/cloth-config-15.0.140-fabric.jar",
+          "sha1": ""
         }
       ]
     }
