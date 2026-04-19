@@ -139,6 +139,16 @@
           "name": "cloth-config",
           "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/HpMb5wGb/cloth-config-15.0.140-fabric.jar",
           "sha1": ""
+        },
+        {
+          "name": "konkrete",
+          "url": "https://cdn.modrinth.com/data/J81TRJWm/versions/Qvrc7DuG/konkrete_fabric_1.9.9_MC_1.21.jar",
+          "sha1": ""
+        },
+        {
+          "name": "melody",
+          "url": "https://cdn.modrinth.com/data/CVT4pFB2/versions/OqxSeb4n/melody_fabric_1.0.10_MC_1.21.jar",
+          "sha1": ""
         }
       ]
     }
