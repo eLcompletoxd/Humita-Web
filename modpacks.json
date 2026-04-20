@@ -12,7 +12,7 @@
       "serverIp": "tu.servidor.ip:25565",
       "logo": "",
       "color": "#27ae60",
-      "background": "D:\\Humita-web\\src\\assets\\img\\background-3.jpg",
+      "background": "../../assets/img/background-3.jpg",
       "mods": [
         {
           "name": "fabric-api",
@@ -63,7 +63,7 @@
       "serverIp": "hypixel.net:25565",
       "logo": "",
       "color": "#2980b9",
-      "background": "D:\\Humita-web\\src\\assets\\img\\background-4.jpg",
+      "background": "../../assets/img/background-4.jpg",
       "mods": [
         {
           "name": "Enhanced-Block-Entities",
