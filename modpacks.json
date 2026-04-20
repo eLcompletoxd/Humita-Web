@@ -10,9 +10,9 @@
         "version": "0.18.0"
       },
       "serverIp": "tu.servidor.ip:25565",
-      "logo": "",
+      "logo": "https://humitaclient.sytes.net/src/assets/img/icon.ico",
       "color": "#27ae60",
-      "background": "https://humitaclient.sytes.net/src/assets/img/background-3.jpg",
+      "background": "https://humitaclient.sytes.net/src/assets/videos/background-1.webm",
       "mods": [
         {
           "name": "fabric-api",
