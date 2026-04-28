@@ -10,28 +10,28 @@ document.addEventListener('DOMContentLoaded', () => {
         staff:    document.getElementById('view-staff'),
         support:  document.getElementById('view-support'),
         socials:  document.getElementById('view-socials'),
-        home:     document.getElementById('view-home'),
-        download: document.getElementById('view-home'), // redirect to home for now
+        home:     document.getElementById('view-home')
     };
 
     const navLinks = document.querySelectorAll('[data-view]');
 
     function switchView(viewKey) {
         const target = views[viewKey];
+        // Si no existe la vista (como en 'download'), salimos de la función
         if (!target) return;
 
         const current = document.querySelector('.view.active');
 
         const activate = () => {
-            // Hide all
+            // Ocultar todas las vistas
             Object.values(views).forEach(v => {
                 if (v) v.classList.remove('active', 'leaving');
             });
 
-            // Show target
+            // Mostrar la vista objetivo
             target.classList.add('active');
 
-            // Update active nav link
+            // Actualizar estado activo en los enlaces de navegación
             document.querySelectorAll('.nav-links a').forEach(a => {
                 a.classList.toggle('active', a.dataset.view === viewKey);
             });
@@ -50,19 +50,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
             const viewKey = link.dataset.view;
+
+            // EXCEPCIÓN DE DESCARGA:
+            // Si el botón es para descargar, NO ejecutamos e.preventDefault()
+            // Esto permite que el navegador inicie la descarga del .exe
+            if (viewKey === 'download') {
+                return; // Salimos de la función y dejamos que el navegador actúe
+            }
+
+            // Para el resto de vistas, sí bloqueamos el comportamiento por defecto
+            e.preventDefault();
             if (viewKey) switchView(viewKey);
         });
     });
 
-    // Brand logo returns to home
-    document.querySelector('.brand-box').addEventListener('click', () => {
-        switchView('home');
-    });
+    // Logo de la marca vuelve al inicio
+    const brandBox = document.querySelector('.brand-box');
+    if (brandBox) {
+        brandBox.addEventListener('click', () => {
+            switchView('home');
+        });
+    }
 
     // ========================= 
-    // FILTER BUTTONS (shared)
+    // FILTER BUTTONS
     // =========================
     document.querySelectorAll('.store-filter-bar, .news-filter-bar').forEach(bar => {
         bar.querySelectorAll('.filter-btn').forEach(btn => {
@@ -81,10 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const item = btn.closest('.faq-item');
             const isOpen = item.classList.contains('open');
 
-            // Close all
             document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
 
-            // Open clicked if it was closed
             if (!isOpen) item.classList.add('open');
         });
     });
